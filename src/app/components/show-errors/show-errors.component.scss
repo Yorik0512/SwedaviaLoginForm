@@ -1,0 +1,16 @@
+@import '../../../scss/variables';
+
+ul {
+  list-style: none;
+  padding-top: 10px;
+
+  li {
+    color: $red;
+    font-size: 12px;
+    padding-bottom: 2px;
+
+    &:before {
+      content: "* ";
+    }
+  }
+}

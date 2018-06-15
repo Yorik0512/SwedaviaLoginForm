@@ -1,0 +1,94 @@
+@import './../scss/variables';
+
+header,
+footer,
+main {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  figure {
+    max-width: 200px;
+    width: 100%;
+    padding: 0 0 44px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+main {
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
+  border-radius: 4px;
+  background: $white;
+  padding: 0 30px 36px;
+
+  label {
+    color: $grey-dark;
+    font-weight: 400;
+    display: block;
+    padding: 22px 0 6px;
+
+    &:hover {
+      ~ input {
+        box-shadow: none;
+      }
+    }
+  }
+
+  input {
+    display: block;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    padding: 0 16px;
+    font-size: 16px;
+    border: 1px solid $grey2;
+    transition: .4s all;
+
+    &:hover {
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+    }
+  }
+
+  button {
+    background: $pink;
+    color: $white;
+    border-radius: 29px;
+    height: 58px;
+    width: 204px;
+    border: 0;
+    cursor: pointer;
+    transition: .4s all;
+    font-size: 16px;
+    margin-top: 38px;
+
+    &:disabled {
+      opacity: .4;
+      cursor: not-allowed;
+
+      &:hover {
+        background: $pink;
+      }
+    }
+
+    &:hover {
+      background: $pink2;
+    }
+  }
+
+  a {
+    float: right;
+    margin-top: 58px;
+  }
+}
+
+footer {
+  padding-top: 40px;
+  text-align: center;
+}
